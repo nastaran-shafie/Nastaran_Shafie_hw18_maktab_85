@@ -1,5 +1,5 @@
 
-import React from "react"
+import React, { useEffect } from "react"
 import Button from "../button";
 import styles from "../color/color.module.css"
 import { useState } from "react";
@@ -11,7 +11,9 @@ interface ChildProps {
   }
 
 function  Color({ div ,onsaveDive}:ChildProps){
+ 
   const [rgb , setRgb]=useState<string>(" ")
+  
     const chooseColor=()=>{
         let r :number=Math.round(Math.random() * (255 - 0) + 0);
         let g :number=Math.round(Math.random() * (255 - 0) + 0);

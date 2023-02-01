@@ -1,0 +1,81 @@
+.card {
+  width: 300px;
+  height: 300px;
+  border: 0.125rem solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.AdjustContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.125rem;
+}
+
+.choosecolor {
+  margin-top: 100px;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.black {
+  width: 200px;
+  height: 2.3rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: black;
+  color: white;
+}
+.white {
+  width: 200px;
+  height: 2.3rem;
+
+  border-radius: 1.25rem;
+  background-color: white;
+}
+.red {
+  width: 170px;
+  height: 2.3rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: red;
+  color: white;
+}
+.green {
+  width: 170px;
+  height: 2.3rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: green;
+  color: white;
+}
+.blue {
+  width: 170px;
+  height: 2.3rem;
+  border: none;
+  border-radius: 1.25rem;
+  background-color: blue;
+  color: white;
+}
+button {
+  width: 120px;
+  height: 2.3rem;
+  border: none;
+  border-radius: 1.25rem;
+  border: 2px solid darkgray;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+  background-color: rgb(143, 142, 142);
+}
+.container {
+  display: flex;
+}
+
+button:focus {
+  border: 5px solid black;
+}

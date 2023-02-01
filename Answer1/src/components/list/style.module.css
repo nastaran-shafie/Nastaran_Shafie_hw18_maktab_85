@@ -1,0 +1,14 @@
+.container p {
+  width: 200px;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  border: 0.125rem solid gray;
+  align-items: center;
+  font-weight: bold;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 3.125rem;
+}

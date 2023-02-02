@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../Button/button";
 import "../form/form.css";
 function Form() {
   // stats-----------------------------------------------------------------------------------------------------
@@ -43,13 +44,24 @@ function Form() {
           <h1>Create account</h1>
           <p>Already have an account?</p>
         </div>
-        <input type="text" placeholder="username" onChange={usernameChange} />
+        <input
+          type="text"
+          placeholder="username"
+          onChange={usernameChange}
+          required
+        />
         <div className="nameContainer">
-          <input type="text" placeholder="frist name" onChange={nameChange} />
+          <input
+            type="text"
+            placeholder="frist name"
+            onChange={nameChange}
+            required
+          />
           <input
             type="text"
             placeholder="last name"
             onChange={lastNameChange}
+            required
           />
         </div>
         <input
@@ -58,10 +70,11 @@ function Form() {
           id=""
           placeholder=" email"
           onChange={emailChange}
+          required
         />
-        <button onClick={submitForm}>sign up</button>
+        {/* <button onClick={submitForm}>sign up</button> */}
+        <Button onClick={submitForm} title="sign up" />
         <div className="footer">
-          {" "}
           <input type="checkbox" />
           <p>
             I have read and agree to the <span>Terns of Services</span>
